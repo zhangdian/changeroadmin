@@ -14,7 +14,7 @@ public class JettyServer {
 	
 	public static void main(String[] args) throws Exception 
 	{
-		Server server = buildNormalServer(8093, "/");
+		Server server = buildNormalServer(8081, "/");
 		server.start();
 	}
 	
