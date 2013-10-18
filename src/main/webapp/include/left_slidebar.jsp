@@ -31,16 +31,13 @@ String selected_item = request.getParameter("selected_item");
             <li class="has_submenu nred<%if(selected_item.startsWith("sendcloud")) {%> current open<% }%>">
               <a href="#">
                 <!-- Menu name with icon -->
-                <i class="icon-th"></i> SendCloud
+                <i class="icon-th"></i> 类别
                 <!-- Icon for dropdown -->
                 <span class="pull-right"><i class="icon-angle-right"></i></span>
               </a>
 
               <ul>
-                <li><a href="./sendcloud_intro.jsp">简介</a></li>
-                <li><a href="./sendcloud_how2use.jsp">使用介绍</a></li>
-                <li><a href="./initSCTask.do">任务</a></li>
-                <li><a href="./initSCSetting.do">设置</a></li>
+                <li><a href="./create_category.jsp">创建类别</a></li>
               </ul>
             </li>
 

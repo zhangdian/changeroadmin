@@ -32,9 +32,9 @@ public class IdentityFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
 		log.debug("start do Filter.....");
-//		HttpServletRequest req = (HttpServletRequest) request;
-//		HttpServletResponse resp = (HttpServletResponse) response;
-//
+		HttpServletRequest req = (HttpServletRequest) request;
+		HttpServletResponse resp = (HttpServletResponse) response;
+
 //		// 获取保存在session中的用户名
 //		UserInfo userInfo = (UserInfo) req.getSession().getAttribute(ConstatVar.LOGIN_SESSION);
 //
@@ -59,6 +59,8 @@ public class IdentityFilter implements Filter {
 //			// 登陆了的用户
 //			chain.doFilter(req, resp);
 //		}
+		
+		chain.doFilter(req, resp);
 	}
 
 	public void init(FilterConfig filterConfig) throws ServletException {
